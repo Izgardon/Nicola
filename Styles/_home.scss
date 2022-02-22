@@ -1,0 +1,150 @@
+@import "./variables";
+
+/* Section 1 */
+
+.section1 {
+    padding: 0;
+    margin: auto;
+    position: relative;
+    display: flex;
+    width: 80vw;
+    max-width: 75rem;
+    height: 100vh;
+}
+
+.background1 {
+    background: url("../imagesn/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    flex: 6;
+    margin: auto;
+    font-family: serif;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: white;
+    font-size: 10vw;
+    padding: 10rem 1rem 8rem 1rem;
+}
+
+.learn-more {
+    text-align: left;
+    color: $darkText;
+    flex: 5;
+    max-width: 28rem;
+    background: white;
+    height: 100%;
+    padding: 10rem 2rem 0 2rem;
+}
+
+.learn-more>h2 {
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    font-size: 2.5em;
+    position: relative;
+}
+
+.learn-more>h2::after {
+    content: "";
+    position: absolute;
+    width: 33%;
+    height: 5px;
+    left: 0;
+    bottom: -15px;
+    background-color: $primaryText;
+}
+
+.button {
+    margin: 2rem auto 0 auto;
+    padding: 0.5rem;
+    background: $primary;
+    ;
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 8rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.button-two {
+    background-color: white;
+    border: 2px solid $primary;
+    color: $primary;
+    margin-left: 1rem;
+}
+
+.button-one:hover {
+    background-color: $primary;
+    box-shadow: 0 0 10px $primary;
+    border: 1px solid $primary;
+}
+
+.button-two:hover {
+    box-shadow: 0 0 10px $primary;
+    background-color: $primary;
+    color: white;
+}
+
+//Section 2
+.section2 {
+    width: 100%;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 60vmin;
+    height: 60vmin;
+    min-width: 300px;
+    margin: 10rem auto;
+    border: 2px solid black;
+    transform: rotate(-45deg);
+    grid-template-areas: ". header header" "left header header" "bottom right .";
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: red;
+    aspect-ratio: 1;
+}
+
+.grid-content {
+    transform: rotate(45deg);
+}
+
+.one {
+    background-color: rgb(210, 145, 188);
+    grid-area: header;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1100px) {
+    .hero-text {
+        padding-top: 14rem;
+    }
+}
+
+
+/* Animations */
+
+.roll {
+    display: inline-block;
+    animation: roll 2s ease-in 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}

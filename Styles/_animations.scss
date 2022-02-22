@@ -1,0 +1,25 @@
+@keyframes roll {
+    from {
+        opacity: 0;
+        transform: translatey(-40%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes cross {
+    from {
+        transform: translatex(-100%);
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    to {
+        opacity: 1;
+    }
+}
