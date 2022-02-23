@@ -1,0 +1,44 @@
+    .services-content {
+        margin-top: clamp(10rem, 25vmin, 6rem);
+    }
+    
+    .services-title {
+        position: relative;
+        margin-bottom: 3rem;
+    }
+    
+    .services-title::after {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 5px;
+        left: 0;
+        bottom: -15px;
+        background-color: $primaryText;
+    }
+    
+    .services-content>h3 {
+        margin: 1.75rem 0 1rem 0;
+        font-weight: 300;
+        color: black;
+        font-size: 1.25rem;
+    }
+    
+    .services-grid {
+        margin-block: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .services-grid-item {
+        margin-top: 2rem;
+    }
+    
+    .services-grid-title {
+        margin-block: 0.75rem;
+    }
+    
+    .services-grid-image {
+        width: 90%;
+    }

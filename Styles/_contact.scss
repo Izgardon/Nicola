@@ -1,0 +1,44 @@
+.contact-me>h2 {
+    margin-top: 10rem;
+    color: $darkText;
+    text-align: center;
+}
+
+.contact-me {
+    margin-top: 6rem;
+    color: $primary;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 1142px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-inline: auto;
+    padding: 2rem 4vw;
+    background: white;
+    color: $primary;
+    border-radius: 10px;
+}
+
+.contact-form {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    border: 2px solid $primary;
+}
+
+.contact-form button {
+    margin: 2rem auto 0 auto;
+}
