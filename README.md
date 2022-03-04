@@ -2,6 +2,6 @@
 
 Freelance website
 
-Had basic shell structure created previously. Added new pages for site and started work on creating variables and structure that matched throughout. In process of completing it now.
+Multi-page websited testing out some designs and colors for a local freelancer. I just created outline - no content.
 
-Will be a 4 page site with only structure done and using lorem to fill.
+Used SCSS, HTML and a little JavaScript to create. Will add mobile friendly functionality soon.
